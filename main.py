@@ -65,7 +65,7 @@ async def on_ready():
 @client.tree.command()
 async def merhaba(interaction: Interaction):
     """ Selam verir veya başka bir şeyler der. """
-    print(f"> {interaction.user} used the command.")
+    print(f"> {interaction.user} komutu kullandı.")
     await interaction.response.send_message(
         f"Merhaba **{interaction.user}**, bana selam verdiğin için teşekkürler."
     )
